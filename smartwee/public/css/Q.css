@@ -1,0 +1,69 @@
+/*! Copyright (c) 2023 Programmeria. All Rights Reserved. */
+:root{
+  --q-bg-main:#ffffff
+}
+#_splashScreen,.nojs{
+  position:fixed;
+  background-color:var(--q-bg-main)
+}
+.load-spin,.nojs{
+  display:grid;
+  place-content:center;
+  text-align:center
+}
+.load-spin{
+  user-select:none;
+  z-index:1055;
+  cursor:wait
+}
+.svg-spin{
+  color:#007bff;
+  -webkit-animation:loads 2s linear infinite;
+  animation:loads 2s linear infinite
+}
+.svg-spin circle{
+  fill:none;
+  stroke:currentColor;
+  stroke-dasharray:1,150;
+  stroke-dashoffset:0;
+  stroke-linecap:round;
+  -webkit-animation:dashLoad 1.5s ease-in-out infinite;
+  animation:dashLoad 1.5s ease-in-out infinite
+}
+.inset-0{
+  inset:0
+}
+@keyframes loads{
+  100%{transform:rotate(360deg)}
+}
+@-webkit-keyframes loads{
+  100%{-webkit-transform:rotate(360deg)}
+}
+@keyframes dashLoad{
+  0%{
+    stroke-dasharray:1,150;
+    stroke-dashoffset:0
+  }
+  50%{
+    stroke-dasharray:90,150;
+    stroke-dashoffset:-35
+  }
+  100%{
+    stroke-dasharray:90,150;
+    stroke-dashoffset:-124
+  }
+}
+@-webkit-keyframes dashLoad{
+  0%{
+    stroke-dasharray:1,150;
+    stroke-dashoffset:0
+  }
+  50%{
+    stroke-dasharray:90,150;
+    stroke-dashoffset:-35
+  }
+  100%{
+    stroke-dasharray:90,150;
+    stroke-dashoffset:-124
+  }
+}

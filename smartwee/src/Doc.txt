@@ -1,0 +1,19 @@
+{/* @ts-ignore */}
+
+#31544E -  hijau
+
+FDD639 -  kuning
+
+#06ae5a
+
+.theme-dark-bg {
+  background: #075f33;
+}
+
+style={{color: '#042917', textAlign: 'justify'}}
+
+https://www.youtube.com/watch?v=zSln8WMUwcs
+
+style={{color: '#31544E'}}
+
+style={{float: 'right'}}
